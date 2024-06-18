@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/moneyverse/static/css/main.bc53269c.css",
+    "main.js": "/moneyverse/static/js/main.1a8d2966.js",
+    "static/js/453.6023092d.chunk.js": "/moneyverse/static/js/453.6023092d.chunk.js",
+    "index.html": "/moneyverse/index.html",
+    "main.bc53269c.css.map": "/moneyverse/static/css/main.bc53269c.css.map",
+    "main.1a8d2966.js.map": "/moneyverse/static/js/main.1a8d2966.js.map",
+    "453.6023092d.chunk.js.map": "/moneyverse/static/js/453.6023092d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc53269c.css",
+    "static/js/main.1a8d2966.js"
+  ]
+}
