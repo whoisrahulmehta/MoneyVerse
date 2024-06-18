@@ -134,11 +134,22 @@ input {
 }
 select {
   width: 50%;
-  border: 1px solid white;
+  border: 0.41px solid rgba(255, 255, 255, 0.2);
   //   margin: 40px 0;
-  background: transparent;
+  // background: transparent;
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
-  color: white;
+  text-align: center;
+  // color: white;
+  color: gold;
+  option {
+    // font-size: 14px;
+    color: white;
+    background-color: black;
+    &:hover{
+      color: gold;
+    }
+  }
 }
 button {
   border: 0;
@@ -165,6 +176,9 @@ button {
   justify-content: space-evenly;
   padding: 0 10px;
 }
+.red{
+  color: red;
+}
 .cardimg {
   @include blurry;
   height: 38%;
@@ -175,6 +189,7 @@ button {
   p {
     @include flex;
     text-align: center;
+    color: gold;
     .name {
       font-size: 1.7rem;
     }
@@ -227,8 +242,12 @@ transform: translateY(-500%);
   @include flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   header{
+    @include flex;
 background-color: transparent;
+text-align: center;
+margin: 0 auto;
   }
   .bar{
     height: 1px;

@@ -164,8 +164,8 @@ function App() {
                 </p>
               </div>
               <div className="cardend">
-                TO{" "}
-                <span>
+                TO{"   "}
+                <span className="red">
                   <FontAwesomeIcon icon={faExchange} />
                 </span>
               </div>

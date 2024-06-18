@@ -273,7 +273,7 @@ function Countrylist({ getCountryA }) {
         </option>
         {countries.map((country, index) => (
           <option key={country[0]} value={[country[0], country[1], country[2]]}>
-            {country[1]} {"      "} :{country[0]} {"      "} : {country[2]}{" "}
+            {country[1]} - {country[2]}
           </option>
         ))}
       </select>

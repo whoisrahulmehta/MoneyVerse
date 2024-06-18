@@ -156,10 +156,18 @@ input:visited {
 
 select {
   width: 50%;
-  border: 1px solid white;
-  background: transparent;
+  border: 0.41px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
+  text-align: center;
+  color: gold;
+}
+select option {
   color: white;
+  background-color: black;
+}
+select option:hover {
+  color: gold;
 }
 
 button {
@@ -194,6 +202,10 @@ button {
   padding: 0 10px;
 }
 
+.red {
+  color: red;
+}
+
 .cardimg, .cardbody {
   width: 90%;
   height: 7%;
@@ -214,6 +226,7 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: gold;
 }
 .cardimg p .name, .cardbody p .name {
   font-size: 1.7rem;
@@ -269,9 +282,15 @@ button {
   justify-content: center;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .loader header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
+  text-align: center;
+  margin: 0 auto;
 }
 .loader .bar {
   height: 1px;
