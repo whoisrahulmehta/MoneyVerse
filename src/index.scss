@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+}
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App {
+  @include flex;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  color: white;
+}
+.content {
+  // background: white;
+  padding: 20px 0;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  height: 100vh;
+  width: 70vw;
+  @include flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@mixin blurry {
+  width: 90%;
+  height: 7%;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+header {
+  @include blurry;
+  @include flex;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+  height: 45px;
+  padding: 0 10px;
+  &:hover{
+   h1{ color: red; 
+  }
+    b{
+      color:gold;
+    }
+    p{
+      color:lawngreen;
+  }
+}
+  p,
+  h1 {
+    font-size: 2rem;
+    padding: 0 10% 0 0;
+    color: gold;
+    b {
+      color: red;
+    }
+  }
+}
+footer {
+  @include blurry;
+  @include flex;
+  // height: 51px;
+  height: 10%;
+}
+main {
+  // padding: 0 35px;
+  @include flex;
+  justify-content: start;
+  // @include blurry;
+  // gap: 30px;
+  height: 76%;
+  width: 100%;
+  border-radius: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.card {
+  // animation: autoscroll 10s ease both infinite;
+  @include blurry;
+  background-color: transparent;
+  @include flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 5px;
+  height: 100%;
+  min-width: 330px;
+}
+.xx {
+  background: red;
+}
+input {
+  border: 0;
+  height: 15px;
+  width: 60%;
+  background: transparent;
+  border-bottom: 1px solid white;
+  transition: all ease 0.4s;
+  color: #efefef;
+  text-align: center;
+  /*     border-width:10px; */
+  /*     margin: 5px auto; */
+  &:active {
+    outline: 0;
+    border: 0;
+  }
+  &::placeholder {
+    color: #efefef;
+    text-align: center;
+  }
+  &:hover {
+    // width: 50%;
+    outline: 0;
+    &::placeholder {
+      font-size: 0.8rem;
+    }
+  }
+
+  &:visited {
+    outline: 0;
+    border: 0;
+  }
+}
+select {
+  width: 50%;
+  border: 1px solid white;
+  //   margin: 40px 0;
+  background: transparent;
+  border-radius: 20px;
+  color: white;
+}
+button {
+  border: 0;
+}
+.btn {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: white;
+  // margin: 0 auto;
+  padding: 0 5px;
+  width: 10%;
+  // border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  background: transparent;
+  &:hover {
+    // background-color: white;
+    color: orange;
+    font-size: 1.1rem;
+  }
+}
+.cardheading {
+  @include blurry;
+  @include flex;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+.cardimg {
+  @include blurry;
+  height: 38%;
+  @include flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 5px;
+  p {
+    @include flex;
+    text-align: center;
+    .name {
+      font-size: 1.7rem;
+    }
+  }
+}
+.cardbody {
+  @extend .cardimg;
+}
+.cardend {
+  @include blurry;
+  width: 30%;
+  @include flex;
+  // flex-direction: column;
+  // justify-content: center;
+}
+.box {
+  @include flex;
+  justify-content: space-between;
+}
+.result {
+  @include flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  img {
+    padding: 0 13px;
+  }
+  p {
+    @include flex;
+  }
+}
+
+// @keyframes autoscroll {
+//   0% {
+//     transform: translateX(0%);
+//   }
+//   100% {
+//     transform: translateX(-100%);
+//   }
+// }
+@keyframes slideup {
+  0%{
+transform: translateY(-500%);
+  }
+  100%{
+    transform: translateY(0%);
+
+  }
+}
+.loader{
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+  header{
+background-color: transparent;
+  }
+  .bar{
+    height: 1px;
+    width:10px;
+    background-color: red;;
+animation: grow 3s ease 0s 1 both ;
+  }
+  @keyframes grow {
+from{
+  width: 1%;
+}
+to{
+width: 100%;
+}    
+  }
+}
+@media screen and (max-width: 480px) {
+  .content {
+    height: 100vh;
+    width: 400px;
+    @include flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header {
+    justify-content: space-between;
+    height: 45px;
+    padding: 0 10px;
+    p,
+    h1 {
+      font-size: 2rem;
+      padding: 0 6% 0 0;
+    }
+  }
+  footer {
+    @include blurry;
+    @include flex;
+    // height: 51px;
+    height: 10%;
+    width: 100%;
+  }
+  main {
+    // padding: 0 12%;
+    @include flex;
+    justify-content: start;
+    height: 76%;
+    width: 100%;
+  }
+  .card {
+    // animation: autoscroll 10s ease both infinite;
+    @include blurry;
+    @include flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}

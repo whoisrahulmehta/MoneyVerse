@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+.content {
+  padding: 20px 0;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  height: 100vh;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  width: 90%;
+  height: 7%;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+  height: 45px;
+  padding: 0 10px;
+}
+header:hover h1 {
+  color: red;
+}
+header:hover b {
+  color: gold;
+}
+header:hover p {
+  color: lawngreen;
+}
+header p,
+header h1 {
+  font-size: 2rem;
+  padding: 0 10% 0 0;
+  color: gold;
+}
+header p b,
+header h1 b {
+  color: red;
+}
+
+footer {
+  width: 90%;
+  height: 7%;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+  height: 76%;
+  width: 100%;
+  border-radius: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.card {
+  width: 90%;
+  height: 7%;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 5px;
+  height: 100%;
+  min-width: 330px;
+}
+
+.xx {
+  background: red;
+}
+
+input {
+  border: 0;
+  height: 15px;
+  width: 60%;
+  background: transparent;
+  border-bottom: 1px solid white;
+  transition: all ease 0.4s;
+  color: #efefef;
+  text-align: center;
+  /*     border-width:10px; */
+  /*     margin: 5px auto; */
+}
+input:active {
+  outline: 0;
+  border: 0;
+}
+input::-moz-placeholder {
+  color: #efefef;
+  text-align: center;
+}
+input::placeholder {
+  color: #efefef;
+  text-align: center;
+}
+input:hover {
+  outline: 0;
+}
+input:hover::-moz-placeholder {
+  font-size: 0.8rem;
+}
+input:hover::placeholder {
+  font-size: 0.8rem;
+}
+input:visited {
+  outline: 0;
+  border: 0;
+}
+
+select {
+  width: 50%;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 20px;
+  color: white;
+}
+
+button {
+  border: 0;
+}
+
+.btn {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: white;
+  padding: 0 5px;
+  width: 10%;
+  border-radius: 20px;
+  background: transparent;
+}
+.btn:hover {
+  color: orange;
+  font-size: 1.1rem;
+}
+
+.cardheading {
+  width: 90%;
+  height: 7%;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+
+.cardimg, .cardbody {
+  width: 90%;
+  height: 7%;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  height: 38%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.cardimg p, .cardbody p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cardimg p .name, .cardbody p .name {
+  font-size: 1.7rem;
+}
+
+.cardend {
+  width: 90%;
+  height: 7%;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.result img {
+  padding: 0 13px;
+}
+.result p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(-500%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.loader header {
+  background-color: transparent;
+}
+.loader .bar {
+  height: 1px;
+  width: 10px;
+  background-color: red;
+  animation: grow 3s ease 0s 1 both;
+}
+@keyframes grow {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header {
+    justify-content: space-between;
+    height: 45px;
+    padding: 0 10px;
+  }
+  header p,
+  header h1 {
+    font-size: 2rem;
+    padding: 0 6% 0 0;
+  }
+  footer {
+    width: 90%;
+    height: 7%;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+    height: 76%;
+    width: 100%;
+  }
+  .card {
+    width: 90%;
+    height: 7%;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */
